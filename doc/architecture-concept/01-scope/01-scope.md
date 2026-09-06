@@ -1,6 +1,6 @@
-# 1 Scope 
+# 1 Scope
 
-This document is part of the process for implementing the EU Digital Identity Wallet (EUDIW) in Romania. It proposes architectural, governance, and operational models for the national EUDI Wallet (RO Wallet) ecosystem that is interoperable across the EU while complying to Romanian’s legal, technical, and institutional landscape.
+This document is part of the process for implementing the EU Digital Identity Wallet (EUDIW) in Romania. It proposes architectural, governance, and operational models for the national EUDI Wallet (RO Wallet) ecosystem that is interoperable across the EU while complying with Romania's legal, technical, and institutional landscape.
 
 The RO Wallet is being developed iteratively. 
 

@@ -1,0 +1,25 @@
+﻿---
+- name: Ensure Python 3 is available
+  ansible.builtin.command: python3 --version
+  register: python_check
+  changed_when: false
+
+- name: Display Python version
+  ansible.builtin.debug:
+    msg: "Found Python environment: {{ python_check.stdout }}"
+
+- name: Ensure virtual environment exists
+  ansible.builtin.command:
+    cmd: "python3 -m venv {{ venv_path }}"
+    creates: "{{ venv_path }}/bin/activate"
+
+- name: Upgrade pip in virtualenv
+  ansible.builtin.pip:
+    name: pip
+    state: latest
+    virtualenv: "{{ venv_path }}"
+
+- name: Install documentation dependencies from requirements.txt
+  ansible.builtin.pip:
+    requirements: "{{ requirements_file }}"
+    virtualenv: "{{ venv_path }}"

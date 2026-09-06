@@ -1,0 +1,24 @@
+﻿---
+- name: Verify mkdocs configuration exists
+  ansible.builtin.stat:
+    path: "{{ mkdocs_config }}"
+  register: mkdocs_cfg_stat
+
+- name: Fail if mkdocs.yml is missing
+  ansible.builtin.fail:
+    msg: "mkdocs.yml was not found at {{ mkdocs_config }}"
+  when: not mkdocs_cfg_stat.stat.exists
+
+- name: Build documentation in strict mode
+  ansible.builtin.command:
+    cmd: "{{ venv_path }}/bin/mkdocs build --strict"
+    chdir: "{{ repo_root }}"
+  environment:
+    PYTHONUTF8: "1"
+    PYTHONIOENCODING: "utf-8"
+  register: mkdocs_build
+  changed_when: true
+
+- name: Report build success
+  ansible.builtin.debug:
+    msg: "MkDocs strict build completed successfully without errors or warnings!"

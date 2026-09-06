@@ -36,7 +36,7 @@ theme:
   - navigation.tracking
   - search.highlight
   - search.suggest
-  - toc.follow 
+  - toc.follow
   - toc.integrate
 markdown_extensions:
   - abbr
@@ -143,4 +143,3 @@ nav:
   - 7. Push Notification Service: "architecture-concept/07-push-notification-service/01-push-notification-service.md"
   - 8. Message Queue: "architecture-concept/08-message-queue/01-message-queue.md"
   - 9. UI/UX: "architecture-concept/09-ui-ux/00-index.md"
-  

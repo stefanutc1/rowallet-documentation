@@ -1,0 +1,12 @@
+﻿.git
+.cache
+site
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.idea
+venv
+.env
+.coverage
+ansible/.cache

@@ -1,3 +1,3 @@
 # Release Notes
-- 31th of August 2026
+- 31st of August 2026
 - initial release

@@ -1,0 +1,9 @@
+﻿---
+- name: RO Wallet Documentation (rowallet-documentation) Automation Playbook
+  hosts: local
+  gather_facts: false
+  vars_files:
+    - roles/rowallet_docs/vars/main.yml
+
+  roles:
+    - role: rowallet_docs

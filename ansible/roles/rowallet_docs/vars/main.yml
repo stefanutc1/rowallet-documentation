@@ -1,0 +1,12 @@
+﻿---
+# Variables for RO Wallet Documentation automation
+repo_root: "{{ playbook_dir }}/.."
+venv_path: "{{ repo_root }}/venv"
+requirements_file: "{{ repo_root }}/requirements.txt"
+mkdocs_config: "{{ repo_root }}/mkdocs.yml"
+
+# Build options
+strict_build: true
+build_docker_image: false
+docker_image_name: "rowallet-docs:latest"
+serve_port: 8000

@@ -10,7 +10,7 @@ This chapter documents the overarching roles and components of the architecture 
 
 This section describes the roles that directly participate in credential issuance, storage, presentation, and verification.
 
-In Romania, the PID Provider is the General Directorate for Persons' Records (DGEP), while the Wallet Provider is the General  Directorate for Communications and Information Technology, both operating under the Ministry of Internal Affairs (MoIA).
+In Romania, the PID Provider is the General Directorate for Persons' Records (DGEP), while the Wallet Provider is the General Directorate for Communications and Information Technology, both operating under the Ministry of Internal Affairs (MoIA).
 
 | Name                          | Abbreviation | Description                                                                                          |
 |-------------------------------|--------------|------------------------------------------------------------------------------------------------------|
@@ -35,14 +35,14 @@ The PID Provider ensures that person identification data is securely generated, 
 
 **(Q-, Pub-) EAA Provider**
 
-An (Qualified, Public or domain driven) Electronic Attestation of Attributes (EAA) Provider is an entity responsible for issuing Electronic Attestations of Attributes at the user’s request.
+A (Qualified, Public or domain-driven) Electronic Attestation of Attributes (EAA) Provider is an entity responsible for issuing Electronic Attestations of Attributes at the user’s request.
 
 EAAs allow users to prove specific attributes in a secure, standardized, and legally recognized way.
 
 Qualified EAA (QEAA) Providers meet the highest eIDAS 2.0 trust and security requirements and issue legally binding attestations recognized across borders.
 Public EAA (Pub-EAA) Providers are trusted public entities issuing legally recognized, but non-qualified, attestations.
 
-EAA Providers are trustworthy parties in the EUDI Wallet Ecosystem and providing digital attestations in their specific domain. EAA Providers may originate from various domains such as mobility, telecommunications, education, or healthcare. They are typically supervised by competent authorities within their respective domains. The EUDI Wallet ecosystem envisions multiple EAA Providers as well as QEAA- and Pub-EAA Providers.
+EAA Providers are trustworthy parties in the EUDI Wallet Ecosystem and provide digital attestations in their specific domain. EAA Providers may originate from various domains such as mobility, telecommunications, education, or healthcare. They are typically supervised by competent authorities within their respective domains. The EUDI Wallet ecosystem envisions multiple EAA Providers as well as QEAA- and Pub-EAA Providers.
 
 **QES Provider / Qualified Trust Service Provider (QTSP)**
 
@@ -50,7 +50,7 @@ Qualified Electronic Signatures (QES) provide legally binding signatures for dig
 
 EUDI Wallet Providers must offer users free Qualified Electronic Signatures (QES) for non-professional use within a wallet-centric QES approach. To fulfil this requirement, Wallet Providers may collaborate with Qualified Trust Service Providers (QTSPs). A QTSP is a trust service provider that has received qualified status from a supervisory body in an EU Member State, allowing it to provide qualified trust services with legal effects equivalent to handwritten signatures across the EU.
 
-Beside free of charge QES there will be as well the option to use QES Services for any usecase. The EUDI Wallet Ecosystem interacts with multiple QES Providers / QTSPs listed in the specific EU Trust Lists.
+Besides free-of-charge QES, there will also be the option to use QES Services for any use case. The EUDI Wallet Ecosystem interacts with multiple QES Providers / QTSPs listed in the specific EU Trust Lists.
 
 **Wallet Provider**
 
@@ -106,7 +106,7 @@ Relying Parties must register and declare their intended use of EUDI Wallet data
 
 | Name                            | Description                                                                                            |
 |---------------------------------|--------------------------------------------------------------------------------------------------------|
-| Wallet Revocation Website       | Frontend component that provides a website as an interface for the user to revoke its Wallet Instance. |
+| Wallet Revocation Website       | Frontend component that provides a website as an interface for the user to revoke their Wallet Instance. |
 | Wallet Provider Backend Service | Backend service offering the WB API to provide Wallet Provider Backend operations to the Wallet Instance, performing wallet revocation and management of Wallet Instance Attestations (WIA). |
 | Wallet Backend Account Database | Database for storing Wallet instance accounts in the Wallet Provider Backend.                          |
 | Hardware Security Module (HSM)  | Hardware module for storing cryptographic keys used to sign Wallet Instance Attestations.              |

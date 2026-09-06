@@ -1,8 +1,8 @@
-# 3.1.3  Wallet Revocation
+# 3.1.3 Wallet Revocation
 
 The revocation of a Wallet Instance may happen for various reasons:
 
-- the user revokes its Wallet Instance, e.g. because it lost its device
+- the user revokes their Wallet Instance, e.g. because they lost their device
 - the MDVM revokes a Wallet Instance due to security reasons of the device or wallet app
 
 ## Wallet Revocation by the User
